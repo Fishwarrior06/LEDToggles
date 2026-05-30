@@ -11,8 +11,11 @@ Clone this repository and open it using **Android Studio**.
 ### 2. Configure Your Device MAC Address
 Since Bluetooth MAC addresses are unique to each physical hardware device, you must replace the hardcoded placeholder with your own LED controller's MAC address.
 
-1. Open `app/src/main/java/com/fishwarrior06/ledtoggle/LedTileService.kt` using Android Studio or any text editor.
-2. Locate the `DEVICE_MAC` constant inside the `companion object`:
+1. To find the own MAC Address of your device firt you must open the app and tap on the top left menu button. That will display your "Home" and below it the list of devices that are connected to it. (Like shown below)
+![alt text](image.png)
+Grab the set of numbers below the desired device.
+2. Open `app/src/main/java/com/fishwarrior06/ledtoggle/LedTileService.kt` using Android Studio or any text editor.
+3. Locate the `DEVICE_MAC` constant inside the `companion object`:
    ```kotlin
    private const val DEVICE_MAC = "XX:XX:XX:XX:XX:XX" // <-- Replace with your BLE device MAC address, e.g., "1A:2B:3C:4D:5E:6F"
 
