@@ -15,7 +15,9 @@ Since Bluetooth MAC addresses are unique to each physical hardware device, you m
 ![alt text](image.png)
 
 Grab the set of numbers below the desired device.
+
 2. Open `app/src/main/java/com/fishwarrior06/ledtoggle/LedTileService.kt` using Android Studio or any text editor.
+
 3. Locate the `DEVICE_MAC` constant inside the `companion object`:
    ```kotlin
    private const val DEVICE_MAC = "XX:XX:XX:XX:XX:XX" // <-- Replace with your BLE device MAC address, e.g., "1A:2B:3C:4D:5E:6F"
