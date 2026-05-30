@@ -23,7 +23,7 @@
 
         <service
             android:name=".LedTileService"
-            android:label="Luz de Escritorio"
+            android:label="LED Lights"
             android:icon="@android:drawable/ic_menu_compass"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
             android:exported="true">
