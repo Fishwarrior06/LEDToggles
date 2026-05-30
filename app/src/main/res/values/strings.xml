@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DeskLedToggle</string>
+    <string name="shortcut_on_short">Enciende la luz del escritorio</string>
+    <string name="shortcut_on_long">Enciende las luces LED en color naranja</string>
+    <string name="shortcut_off_short">Apaga la luz naranja</string>
+    <string name="shortcut_off_long">Apaga las luces LED</string>
+</resources>

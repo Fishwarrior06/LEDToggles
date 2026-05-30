@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="encender_luz_naranja"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:shortcutShortLabel="@string/shortcut_on_short"
+        android:shortcutLongLabel="@string/shortcut_on_long">
+        <capabilityBinding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter android:key="feature" android:value="encender"/>
+        </capabilityBinding>
+        <intent
+            android:action="com.fishwarrior06.ledtoggle.ACTION_VOICE_CONTROL"
+            android:targetPackage="com.fishwarrior06.ledtoggle"
+            android:targetClass="com.fishwarrior06.ledtoggle.LedTileService">
+            <extra android:name="state" android:value="on" />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="apagar_luz_naranja"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:shortcutShortLabel="@string/shortcut_off_short"
+        android:shortcutLongLabel="@string/shortcut_off_long">
+        <capabilityBinding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter android:key="feature" android:value="apagar"/>
+        </capabilityBinding>
+        <intent
+            android:action="com.fishwarrior06.ledtoggle.ACTION_VOICE_CONTROL"
+            android:targetPackage="com.fishwarrior06.ledtoggle"
+            android:targetClass="com.fishwarrior06.ledtoggle.LedTileService">
+            <extra android:name="state" android:value="off" />
+        </intent>
+    </shortcut>
+</shortcuts>
