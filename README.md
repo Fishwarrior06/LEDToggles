@@ -13,6 +13,7 @@ Since Bluetooth MAC addresses are unique to each physical hardware device, you m
 
 1. To find the own MAC Address of your device firt you must open the app and tap on the top left menu button. That will display your "Home" and below it the list of devices that are connected to it. (Like shown below)
 ![alt text](image.png)
+
 Grab the set of numbers below the desired device.
 2. Open `app/src/main/java/com/fishwarrior06/ledtoggle/LedTileService.kt` using Android Studio or any text editor.
 3. Locate the `DEVICE_MAC` constant inside the `companion object`:
