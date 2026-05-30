@@ -32,6 +32,8 @@ class LedTileService : TileService() {
     // Raw byte commands for ON, OFF, and the exact orange color (R:255 G:40 B:0)
     private val commandOn = byteArrayOf(0x7E, 0x04, 0x04, 0x01, 0x00, 0x01, 0xFF.toByte(), 0x00, 0xEF.toByte())
     private val commandOff = byteArrayOf(0x7E, 0x04, 0x04, 0x00, 0x00, 0x00, 0xFF.toByte(), 0x00, 0xEF.toByte())
+
+    // Modify this line of code to make the hex positions match the color you already had preset on your Lotus Lantern App
     private val commandColor = byteArrayOf(0x7E, 0x07, 0x05, 0x03, 0xFF.toByte(), 0x28, 0x00, 0x00, 0xEF.toByte())
 
     // Triggered every time the Quick Settings panel is expanded to render the tile
